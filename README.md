@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
@@ -71,3 +72,7 @@ export default defineConfig([
   },
 ])
 ```
+=======
+# HierarchicalTable
+React component for nested table 
+>>>>>>> 90b46a7fe2eb5544aef86f3c4f64f131bf8c016e
