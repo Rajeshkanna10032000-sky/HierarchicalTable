@@ -1,0 +1,600 @@
+.wrapper {
+  margin-bottom: 20px;
+}
+
+/* ── Table chrome ──────────────────────────────────────────────────────────── */
+.tableHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 14px;
+  background: #f7f9fc;
+  border: 1px solid #e0e4ed;
+  border-bottom: none;
+  border-radius: 10px 10px 0 0;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tableHeaderLeft {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.tableHeaderRight {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.badge {
+  font-size: 10px;
+  font-weight: 700;
+  color: #fff;
+  padding: 2px 8px;
+  border-radius: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  flex-shrink: 0;
+}
+
+.tableLabel {
+  font-size: 14px;
+  font-weight: 600;
+  color: #1a2233;
+}
+
+.helpText {
+  font-size: 12px;
+  color: #888;
+  font-style: italic;
+}
+
+.rowCount {
+  font-size: 12px;
+  color: #aaa;
+}
+
+.addRowBtn {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 5px 11px;
+  border: 1.5px solid;
+  border-radius: 6px;
+  background: transparent;
+  cursor: pointer;
+  font-family: inherit;
+  transition: background 0.15s;
+}
+.addRowBtn:hover {
+  background: rgba(79, 110, 247, 0.06);
+}
+
+/* ── Table scroll ─────────────────────────────────────────────────────────── */
+.tableScroll {
+  overflow-x: auto;
+  border: 1px solid #e0e4ed;
+  border-radius: 0 0 10px 10px;
+  background: #fff;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+  min-width: 400px;
+}
+
+/* ── Head ─────────────────────────────────────────────────────────────────── */
+.th {
+  padding: 9px 10px;
+  text-align: left;
+  background: #f0f2f8;
+  border-bottom: 2px solid #e0e4ed;
+  white-space: nowrap;
+  font-size: 11px;
+  font-weight: 700;
+  color: #6b7280;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.expandTh,
+.actionTh {
+  width: 36px;
+  min-width: 36px;
+}
+.rowNumTh {
+  width: 36px;
+  text-align: center;
+  color: #bbb;
+}
+
+.colLabel {
+  display: block;
+}
+.colType {
+  font-size: 9px;
+  font-weight: 500;
+  color: #bbb;
+  text-transform: lowercase;
+  letter-spacing: 0.03em;
+}
+
+.req {
+  color: #e74c3c;
+  margin-left: 2px;
+}
+
+/* ── Body rows ────────────────────────────────────────────────────────────── */
+.tr {
+  border-bottom: 1px solid #f0f2f6;
+  transition: background 0.1s;
+}
+.tr:hover {
+  background: #f8f9fc;
+}
+.trExpanded {
+  background: #f0f4ff !important;
+}
+
+.rowNumTd {
+  text-align: center;
+  color: #ccc;
+  font-size: 12px;
+  padding: 4px;
+  vertical-align: middle;
+}
+
+.actionTd {
+  padding: 4px 6px;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.deleteRowBtn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #ccc;
+  padding: 3px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  transition: color 0.15s, background 0.15s;
+}
+.deleteRowBtn:hover {
+  color: #e74c3c;
+  background: #fdecea;
+}
+
+.expandTd {
+  padding: 4px 6px;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.expandBtn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3px;
+  border-radius: 4px;
+  transition: background 0.15s;
+}
+.expandBtn:hover {
+  background: rgba(79, 110, 247, 0.1);
+}
+
+/* ── Empty state ──────────────────────────────────────────────────────────── */
+.emptyRow {
+  text-align: center;
+  padding: 28px;
+  color: #bbb;
+  font-size: 13px;
+}
+.emptyRow strong {
+  color: #888;
+}
+
+/* ── Nested row ───────────────────────────────────────────────────────────── */
+.nestedRow {
+  background: #f7faff;
+}
+
+.nestedTd {
+  padding: 14px 18px 14px 20px;
+  border-bottom: 1px solid #e0e4ed;
+}
+
+.nestedLabel {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: #aaa;
+  margin-bottom: 12px;
+}
+
+/* ── Column calc tag (in header) ───────────────────────────────── */
+.colCalcTag {
+  display: inline-flex;
+  align-items: center;
+  margin-left: 4px;
+  font-size: 9px;
+  font-weight: 700;
+  color: #4f6ef7;
+  background: rgba(79, 110, 247, 0.1);
+  padding: 1px 5px;
+  border-radius: 3px;
+  letter-spacing: 0.03em;
+  vertical-align: middle;
+}
+
+/* ── Row-calc result column header ─────────────────────────────── */
+.resultTh {
+  background: #fff8f0 !important;
+  border-bottom-color: #f0c080 !important;
+}
+
+.resultTag {
+  display: inline-flex;
+  align-items: center;
+  margin-left: 4px;
+  font-size: 9px;
+  font-weight: 700;
+  color: #e67e22;
+  background: rgba(230, 126, 34, 0.1);
+  padding: 1px 5px;
+  border-radius: 3px;
+  letter-spacing: 0.03em;
+  vertical-align: middle;
+}
+
+/* ── Row-calc result cell ───────────────────────────────────────── */
+.resultCell {
+  padding: 4px 8px;
+  background: #fff8f0;
+  vertical-align: middle;
+  min-width: 90px;
+}
+
+.resultValue {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 13px;
+  font-weight: 700;
+  color: #c0540a;
+  font-family: 'DM Mono', monospace;
+}
+
+.resultIcon {
+  font-size: 11px;
+  color: #e67e22;
+  font-weight: 900;
+}
+
+.resultEmpty {
+  color: #ddd;
+  font-weight: 400;
+}
+
+/* ── Footer row ─────────────────────────────────────────────────── */
+.footerRow {
+  background: #f0f4ff;
+  border-top: 2px solid #c8d3fb;
+}
+
+.footerTd {
+  padding: 8px 10px;
+  vertical-align: middle;
+}
+
+.footerLabel {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #4f6ef7;
+  white-space: nowrap;
+}
+
+.footerValue {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.footerOp {
+  font-size: 9px;
+  font-weight: 600;
+  color: #4f6ef7;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.footerValue strong {
+  font-size: 14px;
+  font-weight: 800;
+  color: #1a2233;
+  font-family: 'DM Mono', monospace;
+}
+
+/* ── Row Count column header ──────────────────────────────────────── */
+.rcTh {
+  background: #f9f5ff !important;
+  border-bottom-color: #c8a8e8 !important;
+  min-width: 220px;
+}
+
+.rcTag {
+  display: inline-flex;
+  align-items: center;
+  margin-left: 4px;
+  font-size: 9px;
+  font-weight: 700;
+  color: #9b59b6;
+  background: rgba(155, 89, 182, 0.1);
+  padding: 1px 5px;
+  border-radius: 3px;
+  letter-spacing: 0.03em;
+  vertical-align: middle;
+}
+
+/* ── Split column header ─────────────────────────────────────────── */
+.splitTh {
+  background: #fdf8ff !important;
+  border-bottom-color: #c8a8e8 !important;
+}
+
+.splitTag {
+  display: inline-flex;
+  align-items: center;
+  margin-left: 4px;
+  font-size: 9px;
+  font-weight: 700;
+  color: #9b59b6;
+  background: rgba(155, 89, 182, 0.1);
+  padding: 1px 5px;
+  border-radius: 3px;
+  letter-spacing: 0.03em;
+  vertical-align: middle;
+}
+
+/* ── Split footer detail (used / remaining) ──────────────────────── */
+.splitFooterDetail {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  font-size: 10px;
+  color: #aaa;
+  font-family: 'DM Mono', monospace;
+  margin-top: 3px;
+}
+
+/* Meta Data Column Header */
+.metaDataTh {
+  background: linear-gradient(135deg, #e8f0fe 0%, #dce8f8 100%) !important;
+  border-bottom-color: var(--accent) !important;
+  min-width: 150px;
+}
+
+.metaDataTag {
+  display: inline-flex;
+  align-items: center;
+  margin-left: 4px;
+  font-size: 9px;
+  font-weight: 700;
+  color: var(--accent);
+  background: rgba(79, 110, 247, 0.15);
+  padding: 1px 5px;
+  border-radius: 3px;
+  letter-spacing: 0.03em;
+  vertical-align: middle;
+}
+
+/* ── Meta Data Footer - Table Style ──────────────────────────────────────── */
+.metaDataFooter {
+  margin-top: 16px;
+  border: 1px solid #e0e4ed;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.metaDataTable {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+.metaDataTable th {
+  padding: 10px 16px;
+  background: linear-gradient(135deg, #f0f2f8 0%, #e8ecf5 100%);
+  border-bottom: 2px solid #e0e4ed;
+  font-size: 11px;
+  font-weight: 700;
+  color: #6b7280;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  text-align: left;
+}
+
+.metaDataTable td {
+  padding: 12px 16px;
+  border-bottom: 1px solid #f0f2f6;
+  vertical-align: middle;
+}
+
+.metaDataTable tr:last-child td {
+  border-bottom: none;
+}
+
+.metaDataTable tr:hover td {
+  background: #f8f9fc;
+}
+
+.metaDataLabel {
+  font-weight: 600;
+  color: #2c3e50;
+  font-size: 13px;
+}
+
+.metaDataValue {
+  text-align: right;
+}
+
+.metaDataCalculated {
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 700;
+  color: #4f6ef7;
+  font-family: 'DM Mono', monospace;
+  background: rgba(79, 110, 247, 0.08);
+  padding: 4px 12px;
+  border-radius: 6px;
+}
+
+.metaDataInput {
+  width: 150px;
+  padding: 6px 10px;
+  font-size: 14px;
+  font-weight: 600;
+  border: 1px solid #dee2e6;
+  border-radius: 6px;
+  text-align: right;
+  color: #28a745;
+  background: white;
+  font-family: 'DM Mono', monospace;
+}
+
+.metaDataInput:focus {
+  outline: none;
+  border-color: #4f6ef7;
+  box-shadow: 0 0 0 2px rgba(79, 110, 247, 0.1);
+}
+
+.metaDataType {
+  font-size: 10px;
+  font-weight: 500;
+  color: #6c757d;
+  background: #e9ecef;
+  padding: 2px 8px;
+  border-radius: 12px;
+  display: inline-block;
+}
+
+/* Alternative: Card style for meta data */
+.metaDataGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 12px;
+  padding: 16px;
+  background: #f8f9fc;
+}
+
+.metaDataCard {
+  background: white;
+  border: 1px solid #e0e4ed;
+  border-radius: 8px;
+  padding: 12px 16px;
+  transition: all 0.2s;
+}
+
+.metaDataCard:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  border-color: #4f6ef7;
+}
+
+.metaDataCardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid #f0f2f6;
+}
+
+.metaDataCardLabel {
+  font-weight: 700;
+  font-size: 13px;
+  color: #2c3e50;
+}
+
+.metaDataCardType {
+  font-size: 9px;
+  font-weight: 600;
+  color: #6c757d;
+  background: #e9ecef;
+  padding: 2px 8px;
+  border-radius: 12px;
+  text-transform: uppercase;
+}
+
+.metaDataCardValue {
+  text-align: right;
+  margin-top: 8px;
+}
+
+.metaDataCardCalculated {
+  font-size: 20px;
+  font-weight: 800;
+  color: #4f6ef7;
+  font-family: 'DM Mono', monospace;
+}
+
+.metaDataCardInput {
+  width: 100%;
+  padding: 6px 10px;
+  font-size: 16px;
+  font-weight: 600;
+  border: 1px solid #dee2e6;
+  border-radius: 6px;
+  text-align: right;
+  color: #28a745;
+  background: white;
+  font-family: 'DM Mono', monospace;
+}
+
+/* Error Tooltip */
+.errorTooltip {
+  position: absolute;
+  background: #dc3545;
+  color: white;
+  font-size: 11px;
+  padding: 4px 8px;
+  border-radius: 4px;
+  margin-top: 4px;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  white-space: nowrap;
+}
+
+.errorTooltip::before {
+  content: '';
+  position: absolute;
+  top: -4px;
+  left: 12px;
+  width: 0;
+  height: 0;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-bottom: 4px solid #dc3545;
+}

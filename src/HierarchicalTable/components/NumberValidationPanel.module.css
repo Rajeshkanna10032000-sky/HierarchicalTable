@@ -1,0 +1,153 @@
+.validationToggle {
+    margin-top: 8px;
+  }
+  
+  .enableBtn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 12px;
+    background: #f0f7ff;
+    border: 1px solid #4f6ef7;
+    border-radius: 6px;
+    color: #4f6ef7;
+    font-size: 12px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  
+  .enableBtn:hover {
+    background: #4f6ef7;
+    color: white;
+  }
+  
+  .validationPanel {
+    margin-top: 12px;
+    padding: 12px;
+    background: #fff9f0;
+    border: 1px solid #ffc107;
+    border-radius: 8px;
+  }
+  
+  .panelHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #ffe0a3;
+  }
+  
+  .panelTitle {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #856404;
+  }
+  
+  .closeBtn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    color: #999;
+  }
+  
+  .closeBtn:hover {
+    background: #ffe0a3;
+    color: #666;
+  }
+  
+  .validationContent {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .section {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .sectionLabel {
+    font-size: 12px;
+    font-weight: 600;
+    color: #666;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  
+  .rangeRow {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+  
+  .inputGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+  
+  .inputGroup label {
+    font-size: 11px;
+    font-weight: 500;
+    color: #888;
+  }
+  
+  .input {
+    padding: 6px 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 13px;
+    transition: border-color 0.2s;
+  }
+  
+  .input:focus {
+    outline: none;
+    border-color: #ffc107;
+  }
+  
+  .optionsRow {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .checkboxLabel {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 12px;
+    cursor: pointer;
+  }
+  
+  .previewSection {
+    margin-top: 8px;
+    padding: 10px;
+    background: #f8f9fa;
+    border-radius: 6px;
+  }
+  
+  .previewTitle {
+    font-size: 11px;
+    font-weight: 600;
+    color: #666;
+    margin-bottom: 8px;
+  }
+  
+  .rulesList {
+    margin: 0;
+    padding-left: 20px;
+    font-size: 11px;
+    color: #28a745;
+    line-height: 1.6;
+  }

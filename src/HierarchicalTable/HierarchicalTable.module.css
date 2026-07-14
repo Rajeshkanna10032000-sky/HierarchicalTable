@@ -1,0 +1,147 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: #f0f2f8;
+  font-family: 'DM Sans', 'Segoe UI', sans-serif;
+}
+
+.topBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 28px;
+  background: #fff;
+  border-bottom: 1px solid #e0e4ed;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.topBarLeft {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
+}
+
+.appTitle {
+  font-size: 16px;
+  font-weight: 700;
+  color: #1a2233;
+  letter-spacing: -0.02em;
+}
+
+.topBarRight {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.previewBtn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: #fff;
+  color: #4f6ef7;
+  border: 1.5px solid #4f6ef7;
+  border-radius: 8px;
+  padding: 8px 16px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s, transform 0.1s;
+  font-family: inherit;
+}
+.previewBtn:hover:not(:disabled) {
+  background: #f0f4ff;
+  transform: translateY(-1px);
+}
+.previewBtn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.addRootBtn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: #4f6ef7;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 9px 16px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s, transform 0.1s;
+  font-family: inherit;
+}
+.addRootBtn:hover {
+  background: #3a55d4;
+  transform: translateY(-1px);
+}
+.addRootBtn:active {
+  transform: translateY(0);
+}
+
+.main {
+  flex: 1;
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 28px 20px;
+  box-sizing: border-box;
+}
+
+.empty {
+  text-align: center;
+  padding: 80px 20px;
+  color: #aab0be;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+}
+.empty p {
+  font-size: 15px;
+  line-height: 1.5;
+}
+.empty strong {
+  color: #4f6ef7;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 28px;
+  background: #fff;
+  border-top: 1px solid #e0e4ed;
+  font-size: 12px;
+  color: #888;
+}
+
+.exportBtn {
+  font-size: 12px;
+  padding: 6px 14px;
+  border-radius: 6px;
+  border: 1px solid #d0d5db;
+  background: #fff;
+  color: #555;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.15s;
+  font-family: inherit;
+}
+.exportBtn:hover {
+  background: #f0f4ff;
+  border-color: #4f6ef7;
+  color: #4f6ef7;
+}

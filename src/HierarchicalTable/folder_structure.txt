@@ -1,0 +1,82 @@
+src/
+├─- HierarchicalTable
+│    ├── components/
+│       ├── ColumnRow.module.css
+│       ├── ColumnRow.tsx
+│       ├── FormulaBuilder.module.css
+│       ├── FormulaBuilder.tsx
+│       ├── PreviewCell.module.css
+│       ├── PreviewCell.tsx
+│       ├── PreviewModel.module.css
+│       ├── PreviewModel.tsx
+│       ├── PreviewTable.module.css
+│       ├── PreviewTable.tsx
+│       ├── TableCard.module.css
+│       └── TableCard.tsx
+│       ├── Rowcountcell.module.css
+│       └── Rowcountcell.tsx
+│       ├── Breakdownpanel.module.css
+│       └── Breakdownpanel.tsx
+│    ├── hooks/
+│       ├── usePreviewState.ts
+│       ├── useTableState.ts
+│    ├── types.ts                          
+│    ├── HierarchicalTable.tsx             
+│    ├── HierarchicalTable.module.css
+│    ├── index.ts 
+│    └── utils/
+│       ├── calcUtils.ts
+│       ├── tableUtils.ts
+│       └── exportUtils.ts
+
+-----------------------------------------------
+(But advanced )
+------------------------------------------------
+src/
+└── HierarchicalTable/
+    ├── components/
+    │   ├── builder/
+    │   │   ├── ColumnRow
+    │   │   │   ├── ColumnRow.tsx
+    │   │   │   ├── ColumnRow.module.css
+    │   │   │   └── index.ts
+    │   │   ├── FormulaBuilder/
+    │   │   │   ├── FormulaBuilder.tsx
+    │   │   │   ├── FormulaBuilder.module.css
+    │   │   │   └── index.ts
+    │   │
+    │   ├── preview/
+    │   │   ├── PreviewTable/
+    │   │   │   ├── PreviewTable.tsx
+    │   │   │   ├── PreviewTable.module.css
+    │   │   │   └── index.ts
+    │   │   ├── PreviewCell/
+    │   │   │   ├── PreviewCell.tsx
+    │   │   │   ├── PreviewCell.module.css
+    │   │   │   └── index.ts
+    │   │   ├── PreviewModal/
+    │   │   │   ├── PreviewModal.tsx
+    │   │   │   ├── PreviewModal.module.css
+    │   │   │   └── index.ts
+    │   │
+    │   ├── common/
+    │   │   ├── TableCard/
+    │   │   │   ├── TableCard.tsx
+    │   │   │   ├── TableCard.module.css
+    │   │   │   └── index.ts
+    │
+    ├── hooks/
+    │   ├── useTableState.ts
+    │   ├── usePreviewState.ts
+    │
+    ├── utils/
+    │   ├── calcUtils.ts
+    │   ├── tableUtils.ts
+    │   ├── exportUtils.ts
+    │
+    ├── types/
+    │   └── index.ts
+    │
+    ├── HierarchicalTable.tsx
+    ├── HierarchicalTable.module.css
+    └── index.ts

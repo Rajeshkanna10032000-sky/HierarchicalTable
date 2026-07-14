@@ -1,0 +1,163 @@
+.modeContainer {
+    margin-top: 12px;
+  }
+  
+  .modeToggle {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 12px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #e9ecef;
+  }
+  
+  .modeBtn {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    padding: 8px 12px;
+    background: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+    color: #6c757d;
+  }
+  
+  .modeBtn:hover {
+    background: #e9ecef;
+  }
+  
+  .modeBtnActive {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-color: #667eea;
+    color: white;
+  }
+  
+  .modeBtnActive svg {
+    stroke: white;
+  }
+  
+  .modeContent {
+    padding: 12px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    animation: fadeIn 0.2s ease;
+  }
+  
+  .modeDescription {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 10px;
+    background: #fff8e1;
+    border-radius: 6px;
+    font-size: 11px;
+    color: #856404;
+    margin-bottom: 12px;
+  }
+  
+  .aggregationSection {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .fieldGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+  
+  .fieldLabel {
+    font-size: 11px;
+    font-weight: 600;
+    color: #495057;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  
+  .select {
+    padding: 8px 10px;
+    border: 1px solid #dee2e6;
+    border-radius: 6px;
+    font-size: 13px;
+    background: white;
+    cursor: pointer;
+  }
+  
+  .select:focus {
+    outline: none;
+    border-color: #4f6ef7;
+    box-shadow: 0 0 0 2px rgba(79, 110, 247, 0.1);
+  }
+  
+  .opGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+  }
+  
+  .opBtn {
+    padding: 6px 10px;
+    background: white;
+    border: 1px solid #dee2e6;
+    border-radius: 6px;
+    font-size: 11px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  
+  .opBtn:hover {
+    border-color: #4f6ef7;
+    background: #f0f7ff;
+  }
+  
+  .opBtnActive {
+    background: #4f6ef7;
+    border-color: #4f6ef7;
+    color: white;
+  }
+  
+  .previewSection {
+    margin-top: 8px;
+    padding: 10px;
+    background: #e7f3ff;
+    border-radius: 6px;
+    border-left: 3px solid #4f6ef7;
+  }
+  
+  .previewTitle {
+    font-size: 10px;
+    font-weight: 600;
+    color: #6c757d;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+  }
+  
+  .previewContent {
+    font-size: 12px;
+    color: #2c3e50;
+  }
+  
+  .previewContent code {
+    background: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 11px;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-5px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }

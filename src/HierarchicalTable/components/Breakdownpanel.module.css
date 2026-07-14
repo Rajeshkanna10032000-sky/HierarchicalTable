@@ -1,0 +1,177 @@
+.panel {
+    margin-top: 12px;
+    border: 1.5px solid #e0d0f8;
+    border-radius: 10px;
+    overflow: hidden;
+    background: #fff;
+  }
+  
+  .panelHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 16px;
+    background: #f9f5ff;
+    border-bottom: 1px solid #e0d0f8;
+  }
+  
+  .panelHeaderLeft {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .panelTitle {
+    font-size: 13px;
+    font-weight: 700;
+    color: #9b59b6;
+    letter-spacing: -0.01em;
+  }
+  
+  .panelSub {
+    font-size: 11px;
+    color: #bbb;
+  }
+  
+  .collapseBtn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #bbb;
+    display: flex;
+    align-items: center;
+    padding: 2px;
+    border-radius: 4px;
+    transition: background 0.15s;
+  }
+  .collapseBtn:hover { background: #ece4fa; color: #9b59b6; }
+  
+  .panelBody {
+    padding: 14px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  /* ── Per-column breakdown ──────────────────────────────────────── */
+  .colBreakdown {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .colBreakdownHeader {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+  
+  .colName {
+    font-size: 13px;
+    font-weight: 700;
+    color: #1a2233;
+  }
+  
+  .grandTotal {
+    font-size: 12px;
+    color: #666;
+  }
+  
+  .grandTotal strong {
+    color: #9b59b6;
+    font-size: 14px;
+    font-family: 'DM Mono', monospace;
+  }
+  
+  /* ── Stacked summary bar ───────────────────────────────────────── */
+  .barWrap {
+    height: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+    background: #f0e8fa;
+  }
+  
+  .bar {
+    display: flex;
+    height: 100%;
+  }
+  
+  .barSegment {
+    height: 100%;
+    transition: width 0.3s ease;
+    min-width: 2px;
+  }
+  
+  /* ── Entry breakdown table ─────────────────────────────────────── */
+  .entryTable {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .entryLine {
+    display: grid;
+    grid-template-columns: 10px 1fr 120px 44px 80px;
+    align-items: center;
+    gap: 8px;
+    font-size: 12px;
+    padding: 4px 0;
+    border-bottom: 1px solid #f4eef8;
+  }
+  .entryLine:last-child { border-bottom: none; }
+  
+  .totalLine {
+    border-top: 1.5px solid #c8a8e8;
+    padding-top: 6px;
+    margin-top: 2px;
+  }
+  
+  .entryDot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+  
+  .entryName {
+    color: #333;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .entryBarWrap {
+    height: 6px;
+    background: #f0e8fa;
+    border-radius: 3px;
+    overflow: hidden;
+  }
+  
+  .entryBar {
+    height: 100%;
+    border-radius: 3px;
+    transition: width 0.25s ease;
+    min-width: 2px;
+  }
+  
+  .entryPct {
+    text-align: right;
+    color: #aaa;
+    font-size: 11px;
+    font-family: 'DM Mono', monospace;
+  }
+  
+  .entryAmt {
+    text-align: right;
+    color: #555;
+    font-weight: 600;
+    font-family: 'DM Mono', monospace;
+  }
+  
+  .totalAmt {
+    color: #9b59b6;
+    font-size: 14px;
+    font-weight: 800;
+  }

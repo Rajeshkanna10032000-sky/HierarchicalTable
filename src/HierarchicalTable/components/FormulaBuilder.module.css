@@ -1,0 +1,228 @@
+.builder {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* ── Formula display string ─────────────────────────────────────── */
+.formulaDisplay {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  padding: 8px 12px;
+  background: #fff8f0;
+  border: 1px solid #f0c080;
+  border-radius: 6px;
+  font-size: 13px;
+  flex-wrap: wrap;
+}
+
+.formulaLabel {
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #e67e22;
+  flex-shrink: 0;
+}
+
+.formulaStr {
+  font-family: 'DM Mono', monospace;
+  font-size: 13px;
+  color: #444;
+  flex: 1;
+}
+
+.formulaEq {
+  color: #888;
+  font-size: 12px;
+}
+
+/* ── Token chain ────────────────────────────────────────────────── */
+.tokenChain {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+  min-height: 64px;
+  padding: 10px 12px;
+  background: #fafbff;
+  border: 2px dashed #d0d8f0;
+  border-radius: 8px;
+}
+
+.emptyChain {
+  color: #bbb;
+  font-size: 12px;
+  font-style: italic;
+  width: 100%;
+  text-align: center;
+  padding: 8px 0;
+}
+
+/* ── Token chip ─────────────────────────────────────────────────── */
+.tokenChip {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  background: #fff;
+  border: 2px solid #e67e22;
+  border-radius: 8px;
+  padding: 6px 10px;
+  min-width: 90px;
+  animation: popIn 0.15s ease;
+}
+
+@keyframes popIn {
+  from { transform: scale(0.85); opacity: 0; }
+  to   { transform: scale(1);    opacity: 1; }
+}
+
+.chipTop {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.chipLabel {
+  font-size: 12px;
+  font-weight: 700;
+  color: #c0540a;
+  white-space: nowrap;
+}
+
+.chipFieldId {
+  font-family: 'DM Mono', monospace;
+  font-size: 10px;
+  color: #aaa;
+}
+
+.chipActions {
+  display: flex;
+  gap: 3px;
+  margin-top: 2px;
+}
+
+.chipBtn {
+  flex: 1;
+  padding: 2px 4px;
+  font-size: 10px;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  background: #f8f8f8;
+  color: #666;
+  cursor: pointer;
+  transition: background 0.12s;
+  font-family: inherit;
+}
+.chipBtn:hover:not(:disabled) { background: #eee; }
+.chipBtn:disabled { opacity: 0.3; cursor: not-allowed; }
+
+.chipRemove {
+  color: #e74c3c;
+  border-color: #f5c6c6;
+}
+.chipRemove:hover { background: #fdecea !important; }
+
+/* ── Operator selector ──────────────────────────────────────────── */
+.opSelector {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  align-items: center;
+}
+
+.opBtn {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 1.5px solid #d0d5db;
+  background: #f4f5f8;
+  color: #555;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.12s;
+  font-family: inherit;
+  line-height: 1;
+}
+.opBtn:hover { border-color: #e67e22; color: #e67e22; background: #fff8f0; }
+
+.opBtnActive {
+  background: #e67e22 !important;
+  color: #fff !important;
+  border-color: #e67e22 !important;
+  transform: scale(1.1);
+}
+
+/* ── Available column picker ────────────────────────────────────── */
+.pickerSection {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.pickerLabel {
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #888;
+}
+
+.pickerGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.pickerBtn {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px 10px;
+  border: 1.5px dashed #ccc;
+  border-radius: 6px;
+  background: #fff;
+  font-size: 12px;
+  color: #555;
+  cursor: pointer;
+  transition: all 0.12s;
+  font-family: inherit;
+}
+.pickerBtn:hover {
+  border-color: #e67e22;
+  background: #fff8f0;
+  color: #c0540a;
+}
+.pickerBtn code {
+  font-family: 'DM Mono', monospace;
+  font-size: 10px;
+  color: #aaa;
+  background: #f4f5f8;
+  padding: 1px 5px;
+  border-radius: 3px;
+}
+.pickerPlus {
+  font-size: 14px;
+  font-weight: 700;
+  color: #e67e22;
+  line-height: 1;
+}
+
+/* ── BODMAS note ────────────────────────────────────────────────── */
+.bodmasNote {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 11px;
+  color: #999;
+  font-style: italic;
+  padding: 5px 8px;
+  background: #f8f9fc;
+  border-radius: 5px;
+  border: 1px solid #e8eaf0;
+}

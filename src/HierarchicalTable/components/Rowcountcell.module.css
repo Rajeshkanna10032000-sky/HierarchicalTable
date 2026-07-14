@@ -1,0 +1,180 @@
+.td {
+    padding: 6px 8px;
+    vertical-align: top;
+    min-width: 220px;
+  }
+  
+  .cell {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+  
+  /* ── Entry list ─────────────────────────────────────────────────── */
+  .entryList {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    background: #f9f5ff;
+    border: 1px solid #e0d0f8;
+    border-radius: 7px;
+    padding: 6px 8px;
+  }
+  
+  .entryRow {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 3px 0;
+    border-bottom: 1px solid #ece4fa;
+    animation: fadeIn 0.12s ease;
+  }
+  .entryRow:last-of-type { border-bottom: none; }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-3px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  
+  .entryLabel {
+    flex: 1;
+    font-size: 12px;
+    color: #333;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .entryAmount {
+    font-size: 12px;
+    font-weight: 700;
+    color: #7b3fa8;
+    font-family: 'DM Mono', monospace;
+    min-width: 60px;
+    text-align: right;
+  }
+  
+  .editBtn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #aaa;
+    padding: 2px;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    transition: color 0.12s;
+  }
+  .editBtn:hover { color: #9b59b6; }
+  
+  .removeBtn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #ccc;
+    padding: 2px;
+    font-size: 10px;
+    border-radius: 3px;
+    transition: color 0.12s;
+    line-height: 1;
+  }
+  .removeBtn:hover { color: #e74c3c; }
+  
+  /* ── Inline edit inputs ─────────────────────────────────────────── */
+  .editInput {
+    flex: 1;
+    padding: 3px 6px;
+    border: 1px solid #c8a8e8;
+    border-radius: 4px;
+    font-size: 12px;
+    outline: none;
+    background: #fff;
+    font-family: inherit;
+  }
+  .editInput:focus { border-color: #9b59b6; }
+  
+  .editAmount {
+    flex: 0 0 80px;
+    text-align: right;
+    font-family: 'DM Mono', monospace;
+  }
+  
+  .doneBtn {
+    background: #9b59b6;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    padding: 3px 7px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 700;
+    transition: background 0.12s;
+  }
+  .doneBtn:hover { background: #7d3d96; }
+  
+  /* ── Sub-total bar ──────────────────────────────────────────────── */
+  .subTotal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 5px;
+    margin-top: 2px;
+    border-top: 1.5px solid #c8a8e8;
+    font-size: 11px;
+    font-weight: 700;
+    color: #9b59b6;
+  }
+  
+  .subTotal strong {
+    font-size: 13px;
+    font-family: 'DM Mono', monospace;
+  }
+  
+  /* ── Add row ────────────────────────────────────────────────────── */
+  .addRow {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+  }
+  
+  .addInput {
+    flex: 1;
+    padding: 5px 8px;
+    border: 1px dashed #c8a8e8;
+    border-radius: 5px;
+    font-size: 12px;
+    background: #fff;
+    outline: none;
+    transition: border-color 0.15s, background 0.15s;
+    font-family: inherit;
+    color: #333;
+  }
+  .addInput:focus {
+    border-color: #9b59b6;
+    border-style: solid;
+    background: #fcf8ff;
+  }
+  .addInput::placeholder { color: #bbb; }
+  
+  .addAmount {
+    flex: 0 0 90px;
+    text-align: right;
+    font-family: 'DM Mono', monospace;
+  }
+  
+  .addBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 26px;
+    height: 26px;
+    border: none;
+    border-radius: 50%;
+    background: #9b59b6;
+    color: #fff;
+    cursor: pointer;
+    flex-shrink: 0;
+    transition: background 0.15s, transform 0.1s;
+  }
+  .addBtn:hover:not(:disabled) { background: #7d3d96; transform: scale(1.1); }
+  .addBtn:disabled { background: #ddd; cursor: not-allowed; }
